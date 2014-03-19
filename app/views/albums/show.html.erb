@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="show"> 
+  <p><div id="albumcover"><img src= "<%= @album.image_url %>" height="400" width="400"></div>
+<h2><%= @album.album %></h2>
+<h2><%= @album.artist %></h2>
+<h2><%= @album.year %></h2>
+ <h2><a href=<%= @album.purchase %> target="_blank">Buy Album</a></h2></p></div>
+
+<%= link_to 'Edit', edit_album_path(@album) %> |
+<%= link_to 'Back', albums_path %>
